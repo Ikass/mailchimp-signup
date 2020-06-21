@@ -1,0 +1,31 @@
+/* Page Flex container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.site-content {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
