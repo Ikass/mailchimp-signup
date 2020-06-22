@@ -4,76 +4,14 @@ Debugging
 =========================
 */
 
-body {
-    background-color: gold;
-}
-
-header {
-    background-color: goldenrod;
-}
-
 main {
     background-color: greenyellow;
 }
 
-footer {
-    background-color: hotpink;
-}
 
 .layout {
     background-color: indianred;
 }
-
-/*
-=========================
-Layout
-=========================
-*/
-
-.site-layout {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin: 0 auto;
-    min-height: 100vh;
-    padding-top: 80px;
-}
-
-.site-content {
-}
-
-.site-layout img {
-    height: 210px;
-    padding: 40px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-}
-
-.main-content {
-    flex: 1; /* get the main content to occupy all space, with footer at the bottom */
-}
-
-.signup {
-    display: flex;
-    margin-top: 30px;
-}
-
-input {
-    width: 100%;
-}
-
-/*
-=========================
-Header
-=========================
-*/
-
-
 
 /*
 =========================
@@ -85,7 +23,7 @@ Typography
     font-size: 1rem;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     line-height: 1.5;
-    color: hsl(28, 26%, 11%);
+    color: hsl(0, 0%, 20%);
     font-weight: 300;
 }
 
@@ -93,9 +31,94 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     font-size: 3rem;
-    color: hsl(28, 26%, 11%);
+    color: hsl(0, 0%, 20%);
 }
 
-.main-content label {
-    font-size: 1rem;
+p {
+    margin-bottom: 40px;
 }
+
+li {
+    list-style: circle inside;
+}
+
+small {
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 40%);
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+/*
+=========================
+Layout
+=========================
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 80px auto;
+}
+
+.site {
+
+}
+
+body img {
+    height: 210px;
+    padding: 50px;
+}
+
+main {
+    flex: 1; /* get the main content to occupy all space, with footer at the bottom */
+}
+
+.register-form input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.register-form label {
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.signup {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.signup input {
+    margin-right: 1rem;
+}
+
+.signup label {
+    flex: 1;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 5rem;
+    margin-top: 20px;
+}
+
+
+/*
+=========================
+Footer
+=========================
+*/
+
+footer {
+    margin-top: 60px;
+}
+
