@@ -1,31 +1,101 @@
-/* Page Flex container */
+/*
+=========================
+Debugging
+=========================
+*/
 
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 960px;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.site-content {
-    flex: 1;
+body {
+    background-color: gold;
 }
 
 header {
+    background-color: goldenrod;
+}
+
+main {
+    background-color: greenyellow;
+}
+
+footer {
+    background-color: hotpink;
+}
+
+.layout {
+    background-color: indianred;
+}
+
+/*
+=========================
+Layout
+=========================
+*/
+
+.site-layout {
     display: flex;
     justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.site-content {
+}
+
+.site-layout img {
+    height: 210px;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.main-content {
+    flex: 1; /* get the main content to occupy all space, with footer at the bottom */
+}
+
+.signup {
+    display: flex;
+    margin-top: 30px;
+}
+
+input {
+    width: 100%;
+}
+
+/*
+=========================
+Header
+=========================
+*/
+
+
+
+/*
+=========================
+Typography
+=========================
+*/
+
+*, header {
+    font-size: 1rem;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+    color: hsl(28, 26%, 11%);
+    font-weight: 300;
 }
 
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 3rem;
+    color: hsl(28, 26%, 11%);
 }
 
-body {
-    background-color: aliceblue;
-}
-
-p {
-    font-family: 'Courier New', Courier, monospace;
+.main-content label {
+    font-size: 1rem;
 }
